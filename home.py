@@ -1,5 +1,5 @@
 import streamlit as st
-from CRUD import create as c, read as r
+from CRUD import create as c, read as r, update as u, delete as d
 
 st.set_page_config(
     page_title="#IAAD",
@@ -20,7 +20,7 @@ elif selected_option == "📝Create":
     c.main()
 elif selected_option == "🔍Read":
     r.main()
-# elif selected_option == "🔃Update":
-#     u.main()
-# elif selected_option == "📂Delete":
-#     d.main()
+elif selected_option == "🔃Update":
+    u.main()
+elif selected_option == "📂Delete":
+    d.main()
